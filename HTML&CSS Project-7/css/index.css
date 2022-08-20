@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #f05e39;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 10px;
+  font-size: 1rem;  
+}
+
+.active-item {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.left-section h1 {
+  font-family: 'Fredoka One';
+  font-size: 3rem;
+}
+
+.left-section h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.sub-headlines {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.sub-headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.sub-headline img {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.text {
+  color: #888;
+  margin-top: 60px;
+  padding-right: 40px;
+}
+
+.action-btns {
+  margin: 60px 0px;
+}
+
+.action-btns .action-btn {
+  margin-right: 20px;
+}
+
+.action-btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 1.5rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headphone-div {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  top: 60%; 
+  left: 10px;
+}
+
+.discount-content h1 {
+  font-family: 'Fredoka One';
+  font-size: 3rem;
+}
+
+.discount-content {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dots {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.yellow-dot {
+  background-color: #ffae00;
+}
+
+.tomato-dot {
+  background-color: var(--primary-color);
+}
+
+.black-dot {
+  background-color: #000;
+}

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --color1_gradient: linear-gradient(#0bbeef,#085be1);
+    --bgcolor: #fcfcfc;   
+    --blue_color: #065be4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.nav-link {
+    color: #888;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-link-active {
+    color: #000;
+}
+
+.nav-link-btn {
+    padding: 20px 40px;
+    color: var(--blue_color);
+    border: 1px solid var(--blue_color);
+    border-radius: 12px;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+
+.intro {
+    padding-right: 80px;    
+}
+.intro-2 {
+    padding-left: 80px;    
+}
+
+.intro-texts h1 {
+    font-size: 3rem;
+}
+
+.intro-texts p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #888;
+}
+
+.btn {
+    color: #fff;
+    background: var(--color1_gradient);
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 18px #0c75f65b;
+}
+
+.btn-outline {
+    color: var(--blue_color);
+    background: transparent;
+    padding: 15px 30px;
+    border-radius: 12px;
+    border: 1px solid var(--blue_color);
+    outline: none;
+}
+
+.intro-1 {
+    margin-top: 80px;
+}
+.pricing-1 {
+    margin-top: 40px;
+}
+
+.intro-image img {
+    width: 600px;
+}
+
+.services-section {
+    padding: 60px 80px;
+}
+
+.service-section-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-section-header h1 {
+    font-size: 3rem;
+    flex: 1;
+}
+
+.service-section-header p {
+    color: #888;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.service-card h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.service-card p {
+    margin-top: 20px;
+    color: #888;
+}
+
+.pricing-section {
+    background: var(--color1_gradient);
+    padding: 80px;
+}
+
+.pricing-section h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pricing-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-right: 30px;
+    padding-bottom: 30px;    
+    text-align: center;
+}
+
+.pricing-header {
+    text-align: start;
+    padding: 40px 30px;
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+}
+
+.pricing-header-black {
+    color: #fff;
+    background-color: #353434;
+    border-radius: 12px;
+}
+
+.pricing-features {
+    text-align: start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pricing-feature {
+    list-style-type: none;
+    margin-left: 90px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.pricing-feature::before {
+    content: url("./assets/check_circle.svg");
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    color: #21c32c;
+}
+
+.pricing-price h1 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.pricing-price h1 span {
+    font-size: 2rem;
+}
+
+.pricing-section h1 span,.pricing-section p {
+    color: #888;
+}
+
+.testimonial-section {
+    padding: 80px 80px;
+    background-color: #f3efef;
+}
+
+.testimonial-section h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.testimonial-section-description {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+.testimonial-cards {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.testiominal-card {
+    padding: 40px;
+    border: 1px solid #e3dada;
+    border-radius: 12px;    
+}
+
+.testiominal-card:hover{
+    background-color: #fff;
+}
+
+.testiominal-card p {
+    color: #888;
+}
+
+.testimonial-user {
+    margin-top: 20px;
+}
+
+.testimonial-user-image {
+    width: 48px;
+    height: 48px;
+    background-color: #c9c3c3;
+    border-radius: 24px;
+    display: inline-block;
+}
+
+.testimonial-user-details {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.testimonial-user-details .name {
+    color: #000;
+}
+
+.testimonial-user-details .designation {
+    font-size: 0.9rem;
+}
+
+.section-register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background: var(--color1_gradient);
+    color: #fff;
+    margin-top: 80px;
+}
+
+.section-register div {
+    flex: 1;
+}
+
+.section-register-text h1 {
+    font-size: 3rem;
+}
+.section-register-text p {
+    margin-top: 20px;
+}
+.section-register-btn-container {
+    text-align: end;
+}
+.section-register button {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.footer {
+    padding: 60px 80px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #888;
+    gap: 40px;
+}
+
+.footer-logo p {
+    margin-top: 20px;
+}
+
+.footer-links h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.footer-links ul li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.footer-links ul li a {
+    font-size: .8rem;
+    text-decoration: none;
+    color: #888;
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--color1_gradient);
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+.social-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+

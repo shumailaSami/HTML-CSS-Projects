@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Oswald:wght@200;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap');
+
+/*-----css reset---------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    height: 100vh;    
+    width: 100%;   
+    position: relative; 
+    background-color: #2b2922; 
+    background-image: url('./assets/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: #fff;  */  
+} 
+
+
+/*-------------navbar styling----------*/
+
+.navbar {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    background-color: #2d2b24;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 1rem 8rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-item{
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+    color: #a19c9c;    
+}
+
+.list-item:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn button{    
+    cursor: pointer;
+    color: #c3ac39;
+    border: 1px solid #c3ac39;      
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color: transparent; 
+}
+
+/*--------------------------styling header--------------------*/
+
+/* .header{
+     border: 2px solid red; 
+    min-height: 100px;
+    width: 100%;    
+} */
+
+.heading-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #2d2b24;
+    color: #ffffff;
+    align-items: center;    
+    padding: 40px 100px; 
+    line-height: 1;   
+}
+
+.heading-header h1 {
+    flex: 1;
+    font-size: 4rem;
+    line-height: 5rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.heading-header p {
+    flex: 1;
+    color: #a19c98;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 200;
+}
+
+/*------------------------styling footer----------------------*/
+.left-btn {
+    cursor: pointer;
+    background-color: #45423a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin-right: -3px;
+}
+.right-btn {
+    cursor: pointer;
+    background-color: #c3ac39;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction:row-reverse;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #2d2b24;
+}
+.right-controls {
+    flex:1;    
+}
+
+
+/*-------------------------Media Query-----------------------*/
+
+
+
+
+
+
